@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title>Colour Scheme Generator</title>
+  </head>
+  <body>
+    <nav>
+      <form id="form1">
+        <input type="color" value="#8A1E1E" name="seed" id="seed" />
+        <select name="scheme" id="scheme">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome--light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <input
+          type="range"
+          min="1"
+          max="10"
+          value="1"
+          id="range-slider"
+          onchange="updateTextInput(this.value);"
+        />
+        <output id="textOutput" value="1">1</output>
+        <input type="submit" value="Get Colour Scheme" id="button" />
+      </form>
+    </nav>
+    <div id="colors">
+      <!-- <div class="colours1"></div>
+      <div class="colours1"></div>
+      <div class="colours1"></div>
+      <div class="colours1"></div>
+      <div class="colours1"></div> -->
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
